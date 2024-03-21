@@ -1,0 +1,30 @@
+- The Spring container, often referred to as the Spring IoC (Inversion of Control) container,
+is at the core of the Spring Framework.
+- It manages the creation and configuration of application objects (beans) and their dependencies.
+- The container uses dependency injection to wire up these objects, alleviating the need for developers to create and manage object instances manually.
+
+Bean: In the Spring framework, a bean is simply an object that is managed by the Spring IoC container.
+Beans are typically Java objects that are configured and managed by Spring, and they can represent anything from simple data objects to complex business components.
+
+Container: The Spring container is responsible for managing beans. It creates bean instances, configures them,
+wires them together (dependency injection), and manages their lifecycle.
+
+Inversion of Control (IoC): IoC is a design principle where the control of object creation and lifecycle is
+shifted from the application code to an external container or framework. In the case of Spring, the IoC container takes charge of instantiating and managing objects.
+
+Dependency Injection (DI): Dependency Injection is a technique used by the Spring container to inject dependencies into beans.
+Instead of objects creating their own dependencies, they declare their dependencies as constructor arguments, setter methods, or fields, and the container injects the dependencies at runtime.
+
+Configuration: Beans are typically defined and configured in Spring configuration files
+(XML-based or annotation-based) or Java configuration classes (using @Configuration and @Bean annotations). Configuration specifies how beans are created, wired together, and managed by the container.
+
+Lifecycle Management: Spring container manages the lifecycle of beans, which includes instantiation,
+initialization, use, and destruction. It allows you to specify initialization and destruction methods for beans and ensures that these methods are called at the appropriate times.
+
+Scoping: Spring provides various bean scopes (singleton, prototype, request, session, etc.) to
+control the lifecycle and visibility of beans within the container.
+
+@Primary annotation is used to specify a primary bean when there are multiple beans of the same type registered in the application context.
+
+The @Component annotation is a fundamental annotation in the Spring Framework used to mark a Java class as a Spring-managed component.
+When you annotate a class with @Component, Spring automatically detects and registers it as a Spring bean in the application context.
